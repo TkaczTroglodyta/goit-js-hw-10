@@ -1,0 +1,2 @@
+!function(){var t="live_3tP1CMH6ndx78LnNFYHfnKDgFZA1oF27NZ3FACVsBdgCi2qq0jBzYCR8Ikb6V26I";$8994e83c1b13b9e2$export$913382e0b15b5503=function(){return fetch("".concat("https://api.thecatapi.com/v1/breeds","?api_key=").concat(t)).then((function(t){if(t.ok)throw new Error(t.status);return t.json()}))},$8994e83c1b13b9e2$export$57b7d3a597416aa2=function(n){return fetch("".concat("https://api.thecatapi.com/v1/images","/").concat(n,"?api_key=").concat(t)).then((function(t){if(!t.ok)throw new Error(t.status);return t.json()}))}}();
+//# sourceMappingURL=index.12f48053.js.map
