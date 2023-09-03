@@ -1,2 +1,0 @@
-$c4ebbd28ee7007ee$export$913382e0b15b5503=()=>fetch("https://api.thecatapi.com/v1/breeds?api_key=live_3tP1CMH6ndx78LnNFYHfnKDgFZA1oF27NZ3FACVsBdgCi2qq0jBzYCR8Ikb6V26I").then((e=>{if(e.ok)throw new Error(e.status);return e.json()})),$c4ebbd28ee7007ee$export$57b7d3a597416aa2=e=>fetch(`https://api.thecatapi.com/v1/images/${e}?api_key=live_3tP1CMH6ndx78LnNFYHfnKDgFZA1oF27NZ3FACVsBdgCi2qq0jBzYCR8Ikb6V26I`).then((e=>{if(!e.ok)throw new Error(e.status);return e.json()}));
-//# sourceMappingURL=index.49f63946.js.map
