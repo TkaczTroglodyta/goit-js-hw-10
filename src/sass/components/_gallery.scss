@@ -1,0 +1,17 @@
+.cat-info {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+@media screen and (min-width: 768px) {
+  .cat-info {
+    flex-direction: row;
+  }
+}
+
+.cat-info-desc-desc,
+.cat-info-desc-temp {
+  line-height: 150%;
+}
