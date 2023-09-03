@@ -7,3 +7,12 @@ const catInfoDescr = document.querySelector('.cat-info-desc');
 const loaderEyes = document.querySelector('.loader');
 
 breedSelect.addEventListener('choice', onChoice);
+
+function onChoice(evt) {
+  loaderEyes.classList.remove('hidden');
+  catInfoPict.innerHTML = '';
+  catInfoDescr.innerHTML = '';
+  const breedId = evt.target.value;
+  console.log('breedId: ', breedId); // Just for veryfing
+  fetchCatByBreed(breedId).then(breed => showBreedDesc);
+}
