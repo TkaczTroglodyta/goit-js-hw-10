@@ -2,8 +2,8 @@ import { fetchCatByBreed } from './js/cat-api';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 const breedSelect = document.querySelector('.breed-select');
-const catInfoPict = document.querySelector('.cat-info-pict');
-const catInfoDescr = document.querySelector('.cat-info-desc');
+const catInfoPict = document.querySelector('.cat-info__pict');
+const catInfoDescr = document.querySelector('.cat-info__descr');
 const loaderEyes = document.querySelector('.loader');
 
 // Dodaję obsługę zdarzenia do elementu breedSelect za pomocą addEventListener.
