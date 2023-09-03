@@ -6,6 +6,9 @@ const catInfoPict = document.querySelector('.cat-info-pict');
 const catInfoDescr = document.querySelector('.cat-info-desc');
 const loaderEyes = document.querySelector('.loader');
 
+// Dodaję obsługę zdarzenia do elementu breedSelect za pomocą addEventListener.
+// Obsługa zdarzenia onChoice będzie wywoływana, gdy wartość wybranej opcji ulegnie zmianie.
+
 breedSelect.addEventListener('choice', onChoice);
 
 function onChoice(evt) {
@@ -22,3 +25,5 @@ function onChoice(evt) {
     })
     .finally(() => loaderEyes.classList.add('.hidden'));
 }
+
+export { breedSelect, catInfoPict, catInfoDescr, loaderEyes };
