@@ -12,7 +12,7 @@ import { catInfoPict, catInfoDescr } from '../index';
 // opisujący rasę kota do elementu catInfoDescr przy użyciu metody insertAdjacentHTML
 // z parametrem "beforeend". Powoduje to dodanie wygenerowanego kodu HTML na końcu zawartości elementu catInfoDescr.
 
-const showBreedDesc = breed => {
+const showBreedDescr = breed => {
   const markupCatPict = `<img class="cat-pict" src="${breed.url}" alt="${breed.id}">`;
   const markupCatDesc = `<h2 class="cat-info__descr-title">${breed.breeds[0].name}</h2>
   <p class="cat-info__descr-descr">${breed.breeds[0].description}</p>
@@ -21,4 +21,4 @@ const showBreedDesc = breed => {
   catInfoDescr.insertAdjacentHTML('beforeend', markupCatDesc);
 };
 
-export { showBreedDesc };
+export { showBreedDescr };
