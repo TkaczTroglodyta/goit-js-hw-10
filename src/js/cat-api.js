@@ -11,7 +11,7 @@ const API_KEY =
 
 const fetchBreeds = () => {
   return fetch(`${url1}?api_key=${API_KEY}`).then(response => {
-    if (response.ok) {
+    if (!response.ok) {
       throw new Error(response.status);
     }
     return response.json();

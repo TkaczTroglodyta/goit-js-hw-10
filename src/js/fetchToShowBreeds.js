@@ -1,9 +1,9 @@
-import { loaderEyes } from '../index';
+import { loaderEyes, breedSelect } from '../index';
 import { fetchBreeds } from './cat-api';
 import { showBreedsList } from './showBreedsList';
 
 const fetchToShowBreeds = () => {
-  loaderEyes.classList.remove('.hidden');
+  loaderEyes.classList.remove('hidden');
   fetchBreeds()
     .then(breeds => showBreedsList(breeds))
     .catch(err => {
@@ -11,8 +11,8 @@ const fetchToShowBreeds = () => {
       Notify.failure('Oops! Something went wrong! Try reloading the page!');
     })
     .finally(() => {
-      loaderEyes.classList.add('.hidden');
-      breedSelect.classList.remove('.hidden');
+      loaderEyes.classList.add('hidden');
+      breedSelect.classList.remove('hidden');
     });
 };
 
