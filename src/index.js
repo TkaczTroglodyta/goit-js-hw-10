@@ -1,4 +1,6 @@
 import { fetchCatByBreed } from './js/cat-api';
+import { showBreedDesc } from './js/showBreedDescr';
+import { fetchToShowBreeds } from './js/fetchToShowBreeds';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 const breedSelect = document.querySelector('.breed-select');
@@ -10,6 +12,11 @@ const loaderEyes = document.querySelector('.loader');
 // Obsługa zdarzenia onChoice będzie wywoływana, gdy wartość wybranej opcji ulegnie zmianie.
 
 breedSelect.addEventListener('choice', onChoice);
+
+// Wywołanie funkcji fetchAndShowBreeds(). Spowoduje to wykonanie kodu opisanego w funkcji fetchAndRenderBreeds,
+// który obejmuje żądanie do API, przetwarzanie wyników i aktualizację odpowiednich elementów interfejsu.
+
+fetchToShowBreeds();
 
 function onChoice(evt) {
   loaderEyes.classList.remove('.hidden');
