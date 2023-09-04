@@ -9,7 +9,7 @@ const API_KEY =
 // Jeśli odpowiedź serwera nie wynosi 200 (OK), funkcja zgłasza błąd ze statusem odpowiedzi.
 // Jeśli odpowiedź się powiedzie, funkcja zwraca wynik w formacie JSON.
 
-fetchBreeds = () => {
+const fetchBreeds = () => {
   return fetch(`${url1}?api_key=${API_KEY}`).then(response => {
     if (response.ok) {
       throw new Error(response.status);
@@ -24,7 +24,7 @@ fetchBreeds = () => {
 // Jeśli odpowiedź serwera nie wynosi 200 (OK), funkcja zgłasza błąd ze statusem odpowiedzi.
 // Jeśli odpowiedź się powiedzie, funkcja zwraca wynik w formacie JSON.
 
-fetchCatByBreed = breedId => {
+const fetchCatByBreed = breedId => {
   return fetch(`${url2}/${breedId}?api_key=${API_KEY}`).then(response => {
     if (!response.ok) {
       throw new Error(response.status);

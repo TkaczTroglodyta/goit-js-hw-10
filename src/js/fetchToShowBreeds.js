@@ -2,7 +2,7 @@ import { loaderEyes } from '../index';
 import { fetchBreeds } from './cat-api';
 import { showBreedsList } from './showBreedsList';
 
-const fetchShowBreeds = () => {
+const fetchToShowBreeds = () => {
   loaderEyes.classList.remove('.hidden');
   fetchBreeds()
     .then(breeds => showBreedsList(breeds))
@@ -31,4 +31,4 @@ const fetchShowBreeds = () => {
 // interfejsie i obsługuje ewentualne błędy. Po zakończeniu wszystkich operacji,
 // ukrywa również animację ładowania i wyświetla odpowiednie elementy interfejsu użytkownika.
 
-export { fetchShowBreeds };
+export { fetchToShowBreeds };
