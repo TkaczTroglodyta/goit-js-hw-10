@@ -1,6 +1,6 @@
-import { fetchCatByBreed } from './js/cat-api';
-import { showBreedDesc } from './js/showBreedDescr';
-import { fetchToShowBreeds } from './js/fetchToShowBreeds';
+import { fetchCatByBreed } from './cat-api';
+import { showBreedDesc } from './showBreedDescr';
+import { fetchToShowBreeds } from './fetchToShowBreeds';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 const breedSelect = document.querySelector('.breed-select');

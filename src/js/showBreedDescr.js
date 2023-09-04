@@ -1,4 +1,4 @@
-import { catInfoPict, catInfoDescr } from '../index';
+import { catInfoPict, catInfoDescr } from './index';
 
 // Ta funkcja tworzy znaczniki, aby wyświetlić obraz rasy kota i informacje o nim
 // na podstawie przekazanego obiektu rasy. Używając łańcucha markupCatPict, funkcja ta generuje znaczniki dla
