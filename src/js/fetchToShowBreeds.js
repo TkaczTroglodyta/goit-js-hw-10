@@ -1,6 +1,7 @@
 import { loaderEyes, breedSelect } from '../index';
 import { fetchBreeds } from './cat-api';
 import { showBreedsList } from './showBreedsList';
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 const fetchToShowBreeds = () => {
   loaderEyes.classList.remove('hidden');
