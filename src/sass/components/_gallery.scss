@@ -1,0 +1,31 @@
+.cat-info {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+@media screen and (min-width: 768px) {
+  .cat-info {
+    flex-direction: row;
+  }
+}
+
+.cat-info-desc-desc,
+.cat-info-desc-temp {
+  line-height: 150%;
+}
+
+.cat-info-desc-title {
+  margin-top: 0;
+  color: #320c74;
+}
+
+.cat-info-desc-temp {
+  font-weight: 400;
+  color: #310758;
+}
+
+.cat-info-desc-info {
+  margin-top: -15px;
+}
