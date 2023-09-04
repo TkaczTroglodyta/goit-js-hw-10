@@ -13,10 +13,10 @@ import { catInfoPict, catInfoDescr } from './index';
 // z parametrem "beforeend". Powoduje to dodanie wygenerowanego kodu HTML na końcu zawartości elementu catInfoDescr.
 
 const showBreedDescr = breed => {
-  const markupCatPict = `<img class="cat-pict" src="${breed.url}" alt="${breed.id}">`;
-  const markupCatDesc = `<h2 class="cat-info__descr-title">${breed.breeds[0].name}</h2>
-  <p class="cat-info__descr-descr">${breed.breeds[0].description}</p>
-  <p class="cat-info__descr-tempr"><strong>Temperament:</strong> ${breed.breeds[0].temperament}</p>`;
+  const markupCatPict = `<img class="cat-picture" src="${breed.url}" alt="${breed.id}">`;
+  const markupCatDesc = `<h2 class="cat-info-desc-title">${breed.breeds[0].name}</h2>
+    <p class="cat-info-desc-desc">${breed.breeds[0].description}</p>
+    <h4 class="cat-info-desc-temp"><strong>Temperament:</strong></h4><p class="cat-info-desc-info"> ${breed.breeds[0].temperament}</p>`;
   catInfoPict.insertAdjacentHTML('beforeend', markupCatPict);
   catInfoDescr.insertAdjacentHTML('beforeend', markupCatDesc);
 };
